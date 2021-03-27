@@ -1,3 +1,5 @@
+import "../styles/index.css";
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
