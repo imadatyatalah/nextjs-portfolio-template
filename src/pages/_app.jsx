@@ -1,9 +1,13 @@
-import "../styles/index.css";
+import BaseLayout from "@/layouts/BaseLayout";
+
+import "@/styles/index.css";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <Component {...pageProps} />
+      <BaseLayout>
+        <Component {...pageProps} />
+      </BaseLayout>
     </>
   );
 };
