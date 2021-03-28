@@ -5,8 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer class="text-center text-dark">
-        <div class="flex justify-center items-center flex-wrap py-4">
+      <footer className="text-center text-dark">
+        <div className="flex justify-center items-center flex-wrap py-4">
           <a
             href="https://www.facebook.com/"
             target="_blank"
