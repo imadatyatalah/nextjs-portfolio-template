@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { PrimaryBtn } from "@/components/buttons";
+import Button from "@/components/buttons";
 
 const Home = () => {
   return (
@@ -22,7 +22,9 @@ const Home = () => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <PrimaryBtn>Download Resume</PrimaryBtn>
+        <Button color="primary" size="default">
+          Download Resume
+        </Button>
       </section>
     </>
   );
