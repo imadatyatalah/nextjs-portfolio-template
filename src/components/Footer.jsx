@@ -14,29 +14,33 @@ const Footer = () => {
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="mx-4 my-1"
           >
-            <FacebookIcon width="50" height="50" className="mx-4 my-1" />
+            <FacebookIcon width="50" height="50" />
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="mx-4 my-1"
           >
-            <InstagramIcon width="50" height="50" className="mx-4 my-1" />
+            <InstagramIcon width="50" height="50" />
           </a>
           <a
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="mx-4 my-1"
           >
-            <TwitterIcon width="50" height="50" className="mx-4 my-1" />
+            <TwitterIcon width="50" height="50" />
           </a>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="mx-4 my-1"
           >
-            <LinkedInIcon width="50" height="50" className="mx-4 my-1" />
+            <LinkedInIcon width="50" height="50" />
           </a>
         </div>
         <div>
