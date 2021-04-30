@@ -1,6 +1,9 @@
-import { ImFacebook2, ImTwitter } from "react-icons/im";
-import { FiInstagram } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedInIcon,
+} from "@/UI/icons";
 
 const Footer = () => {
   return (
@@ -12,28 +15,28 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ImFacebook2 color="#21243D" size="40" className="mx-4 my-1" />
+            <FacebookIcon width="50" height="50" className="mx-4 my-1" />
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FiInstagram color="#21243D" size="40" className="mx-4 my-1" />
+            <InstagramIcon width="50" height="50" className="mx-4 my-1" />
           </a>
           <a
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ImTwitter color="#21243D" size="40" className="mx-4 my-1" />
+            <TwitterIcon width="50" height="50" className="mx-4 my-1" />
           </a>
           <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin color="#21243D" size="40" className="mx-4 my-1" />
+            <LinkedInIcon width="50" height="50" className="mx-4 my-1" />
           </a>
         </div>
         <div>
