@@ -3,7 +3,7 @@ const sizeClassnames = {
 };
 
 const colorClassnames = {
-  primary: `text-white bg-primary rounded-md`,
+  primary: `text-white bg-primary rounded-sm`,
 };
 
 const Button = ({ children, color, size, className, ...rest }) => {
