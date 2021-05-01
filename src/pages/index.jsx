@@ -1,14 +1,49 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Button from "@/components/buttons";
 import { Post } from "@/components/post";
+import Button from "@/components/buttons";
+
+const Work = ({ imgSrc, title, date, tags, description }) => {
+  return (
+    <>
+      <div className="flex flex-col py-5 lg:flex-row lg:items-center">
+        <div className="flex rounded-md pb-4 lg:pb-0 lg:pr-4">
+          <Image
+            src={imgSrc}
+            layout="intrinsic"
+            width="500"
+            height="300"
+            alt="place holder"
+            className="rounded-md"
+          />
+        </div>
+
+        <div className="relative text-dark">
+          <h2 className="font-bold text-2xl lg:text-3xl">{title}</h2>
+
+          <div className="flex space-x-5 py-3 lg:py-4 lg:space-x-6">
+            <time
+              className="bg-[#142850] text-white font-black px-3 rounded-full lg:text-lg"
+              dateTime="2020-02-12"
+            >
+              {date}
+            </time>
+            <span className="text-light lg:text-xl">{tags}</span>
+          </div>
+
+          <p>{description}</p>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const Home = () => {
   return (
     <>
       {/* Hero section */}
-      <section className="py-4 px-[30px] md:py-8 md:px-[60px] lg:px-[120px] xl:px-[130px]">
+      <section className="mx-auto max-w-[1440px] py-4 px-[30px] md:py-8 md:px-[60px] lg:px-[120px] xl:px-[130px]">
         <div className="py-6 flex flex-col justify-center items-center text-center lg:flex-row-reverse lg:text-left lg:justify-between">
           <div className="relative rounded-full my-4 w-72 h-72 sm:w-[22rem] sm:h-[22rem] lg:w-96 lg:h-96">
             <Image
@@ -36,7 +71,7 @@ const Home = () => {
       </section>
 
       {/* Recent posts section */}
-      <section className="bg-lightCyan py-4 px-[30px] md:py-8 md:px-[60px] lg:px-[120px] xl:px-[130px]">
+      <section className="bg-lightCyan mx-auto max-w-[1440px] py-4 px-[30px] md:py-8 md:px-[60px] lg:px-[120px] xl:px-[130px]">
         <div>
           <div className="flex items-center justify-between">
             <h1 className="font-normal text-[22px] text-dark">Recent posts</h1>
@@ -58,6 +93,41 @@ const Home = () => {
               title="Making a design system from scratch"
               date="12 Feb 2020"
               tags="Design, Pattern"
+              description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Work section */}
+      <section className="mx-auto max-w-[1440px] py-4 px-[30px] md:py-8 md:px-[60px] lg:px-[120px] xl:px-[130px]">
+        <div>
+          <h1 className="text-center font-normal text-[22px] text-dark lg:text-left">
+            Featured works
+          </h1>
+
+          <div className="flex flex-col lg:pt-5 divide-y-[1px] divide-[#E0E0E0]">
+            <Work
+              imgSrc="/designer.jpeg"
+              title="Designing Dashboards"
+              date="2020"
+              tags="Dashboard"
+              description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+
+            <Work
+              imgSrc="/designer.jpeg"
+              title="Vibrant Portraits of 2020"
+              date="2018"
+              tags="Illustration"
+              description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            />
+
+            <Work
+              imgSrc="/designer.jpeg"
+              title="36 Days of Malayalam type"
+              date="2018"
+              tags="Typography"
               description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
             />
           </div>
